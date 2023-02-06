@@ -1,0 +1,31 @@
+.post-item {
+    background-color: white;
+    /* width: 100%; */
+    margin: 2rem 1.5rem;
+    color: black;
+    min-height: 50px;
+    border-radius: 5px;
+    font-family: "Arial", sans-serif;
+    word-wrap: break-word;
+}
+
+.post-item .post-item__top {
+    border-bottom: 1px solid black;
+    padding: 0.2rem;
+}
+
+.post-item .post-item__name {
+    font-weight: 900;
+    margin: 0 1rem;
+    font-family: inherit;
+}
+
+.post-item .post-item__time {
+    color: #868686;
+    font-style: italic;
+}
+
+.post-item .post-item__text {
+    padding: 1rem;
+    font-family: inherit;
+}

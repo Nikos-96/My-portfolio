@@ -1,0 +1,119 @@
+.timer {
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    /* width: 250px; */
+    width: 100%;
+    max-width: 810px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    /* padding: 10px; */
+}
+
+.timer span {
+    margin: 0 auto;
+    font-size: min(40px, 8vw);
+}
+
+.timer button {
+    padding: 3%;
+    margin-left: 5px;
+}
+
+.log-btn {
+    display: none;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.log-btn svg {
+    font-size: min(30px, 6vw);
+}
+
+.menu-btns {
+    display: none;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.menu-btns .disabled {
+    color: gray;
+}
+
+.timer .info-modal {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    width: 300px;
+    max-width: 300%;
+    z-index: 21;
+    background-color: #2c2c2ce3;
+    animation: openInfo 0.3s;
+}
+
+.timer .info-modal a {
+    color: #c96c22
+}
+
+.bg {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes openInfo {
+    from {
+        transform: scale(0.1);
+        transform-origin: top center;
+    }
+
+    to {
+        transform: scale(1);
+        transform-origin: top center;
+    }
+}
+
+@keyframes closeInfo {
+    from {
+        transform: scale(1);
+        transform-origin: center top;
+    }
+
+    to {
+        transform: scale(0.1);
+        transform-origin: center top;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .timer .log-btn {
+        display: flex;
+    }
+
+    .timer .menu-btns {
+        display: block;
+        flex: 1;
+    }
+
+    .timer {
+        max-width: 590px;
+    }
+
+    .timer span {
+        margin: 0;
+        flex: 1;
+    }
+
+    .menu-btns svg {
+        font-size: min(40px, 7vw)
+    }
+}

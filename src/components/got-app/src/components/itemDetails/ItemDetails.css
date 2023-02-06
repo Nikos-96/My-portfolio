@@ -1,0 +1,27 @@
+.GotApp .item-details {
+    background-color: #fff;
+    padding: 25px 25px 15px 25px;
+    margin-bottom: 40px;
+    /* width: 50%; */
+    /* margin-left: 25px; */
+    flex: 1;
+    border-radius: 10px;
+    /* cursor: default !important; */
+}
+
+.GotApp .item-details h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.GotApp .item-details li {
+    cursor: default !important;
+}
+
+.GotApp .select-error {
+    color: #fff;
+    /* text-align: center; */
+    font-size: 2.6rem;
+    /* flex: 1; */
+    /* margin-left: 25px; */
+}

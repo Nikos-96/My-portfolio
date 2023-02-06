@@ -1,0 +1,141 @@
+.GotApp {
+    outline: none;
+    overflow: hidden;
+    background: url('../public/img/got.jpeg') center center no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    min-height: calc(100vh - 150px);
+    color: black;
+}
+
+.GotApp .list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: white;
+    /* height: 100%; */
+    overflow-y: auto;
+    max-height: 360px;
+    flex: 1;
+    border-radius: 10px;
+    /* width: 50%; */
+    /* max-width: 100%; */
+}
+
+/* width */
+.GotApp .list::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+.GotApp .list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #a59b9b;
+}
+
+/* Handle */
+.GotApp .list::-webkit-scrollbar-thumb {
+    background: #6d6464;
+    border-radius: 10px;
+    height: 30px;
+}
+
+/* Handle on hover */
+.GotApp .list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.GotApp .list-container {
+    max-height: 360px;
+    height: 360px;
+    /* overflow-y: auto; */
+    flex: 1;
+}
+
+.GotApp .list-container .list {
+    height: 100%;
+}
+
+.GotApp .list-item {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-width: 0 0 1px;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    /* cursor: pointer; */
+}
+
+.GotApp .container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.GotApp input {
+    width: 100%;
+    display: block;
+    height: 20px;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto 5px auto;
+    padding-left: 15px;
+}
+
+
+
+.GotApp button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #212529;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+.GotApp h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.GotApp a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.GotApp a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.GotApp a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.GotApp a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.GotApp a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.GotApp ul {
+    list-style: none;
+}

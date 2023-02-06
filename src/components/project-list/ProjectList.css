@@ -1,0 +1,30 @@
+.project-list {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    grid-gap: 4rem;
+    justify-content: center;
+    padding: initial;
+    list-style: none;
+    margin-bottom: 5rem;
+    animation: cardAppear 1s;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .project-list {
+        grid-template-columns: none;
+    }
+}

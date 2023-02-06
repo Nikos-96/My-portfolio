@@ -1,0 +1,25 @@
+ol {
+    list-style-position: inside;
+}
+
+.log-panel {
+    max-width: 230px;
+    max-height: 590px;
+    border: 1px solid white;
+    margin-left: 20px;
+    font-family: 'Georgia', sans-serif;
+    padding: 5px;
+    overflow: auto;
+    flex: 1;
+    z-index: 30;
+}
+
+.log-panel li {
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+    .log-panel {
+        display: none;
+    }
+}

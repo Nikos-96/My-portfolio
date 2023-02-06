@@ -1,0 +1,19 @@
+.contact-page {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.contact-page a {
+    color: #c96c22;
+}
+
+.contact-page .container {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.contact-page .container p {
+    margin: 1rem 0;
+}

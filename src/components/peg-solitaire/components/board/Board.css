@@ -1,0 +1,97 @@
+.board {
+    position: relative;
+    /* width: 626px; */
+    /* height: 626px; */
+    /* max-width: 626px; */
+    max-width: 590px;
+    /* max-height: 590px; */
+    /* max-width: 560px; */
+    border: 1px solid white;
+    /* padding: 7px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+}
+
+.cells {
+    display: inline-block;
+    margin: auto 0;
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* vertical-align: top; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    max-width: 560px;
+    /* width: 100%; */
+    flex: 1;
+    /* height: 560px; */
+    list-style: none;
+    color: black;
+}
+
+/* ul {
+    list-style: none;
+    color: black;
+} */
+
+.empty-block {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    padding: 3.2%;
+    /* width: 80px;
+    height: 80px; */
+    border: 1px solid #2c2c2c;
+}
+
+.row {
+    display: flex;
+}
+
+.log-side {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    max-width: 70%;
+    background-color: #2c2c2ce3;
+    /* background-color: #808080eb; */
+    animation: logSideOpen 0.5s;
+    z-index: 21;
+}
+
+/* .log-side .log-panel::-webkit-scrollbar {
+    background-color: white;
+} */
+
+@keyframes logSideOpen {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes logSideClose {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@media only screen and (min-width: 851px) {
+    .log-side {
+        display: none;
+    }
+}

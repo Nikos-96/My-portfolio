@@ -1,0 +1,66 @@
+.PostsApp {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eaf5fc;
+    color: black;
+    min-height: calc(100vh - 150px);
+    position: relative;
+    font-size: 1.6rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.PostsApp .open-spawner {
+    margin-left: 3rem !important;
+}
+
+.posts-tool {
+    display: inline-block;
+    position: relative;
+}
+
+.PostsApp ul {
+    list-style: none;
+}
+
+.PostsApp button {
+    cursor: pointer;
+}
+
+.PostsApp select {
+    margin-left: 1rem;
+}
+
+.PostsApp .btn {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: .25rem;
+    color: #212529;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+}
+
+@media (hover: hover) {
+    .PostsApp .btn:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+}
+
+.PostAppContainer {
+    margin: 0 auto;
+    padding: 5rem 0 5rem 0;
+    max-width: 800px;
+}

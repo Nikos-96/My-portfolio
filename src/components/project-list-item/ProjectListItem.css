@@ -1,0 +1,35 @@
+.project-list .card {
+    width: 300px;
+    height: 200px;
+    outline: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.project-list .card img {
+    display: block;
+    width: 100%;
+    height: 175px;
+    /* object-fit: cover; */
+    /* overflow: hidden; */
+}
+
+.project-list .title {
+    border-bottom: 3px solid white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    height: 25px;
+}
+
+.project-list .card:hover {
+    transform: scale(1.1);
+    outline: 1px solid #be6a6a;
+}
+
+@media only screen and (max-width: 300px) {
+
+    .project-list .card {
+        width: auto;
+    }
+}

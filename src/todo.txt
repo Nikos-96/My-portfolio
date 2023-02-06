@@ -1,0 +1,3 @@
+rewrite findNextPosition, getCellsMove and getEmptyCellsCount functions in 2048 game
+add links to github
+design looks like shit

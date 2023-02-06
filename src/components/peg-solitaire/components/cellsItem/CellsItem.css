@@ -1,0 +1,31 @@
+.board-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-cell {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 80px;
+    background-color: white;
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    padding: 3.2%;
+    /* width: 80px;
+    height: 80px; */
+    border: 1px solid #2c2c2c;
+}
+
+.piece {
+    /* width: 40px;
+    height: 40px; */
+    width: 100%;
+    height: 100%;
+    background-color: #c96c22;
+}
+
+.selected {
+    background-color: green;
+}

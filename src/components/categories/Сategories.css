@@ -1,0 +1,29 @@
+.categories {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    list-style: none;
+    padding-top: 50px;
+    /* gap: 3rem; */
+}
+
+.categories li {
+    flex: 1 1 140px;
+    max-width: 140px;
+}
+
+@media only screen and (max-width: 470px) {
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .categories li {
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,13 @@
+.PostsApp .bottom-panel {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.PostsApp .bottom-panel .new-post-label {
+    /* width: auto; */
+    /* flex-grow: 1; */
+    margin-right: 3px;
+    width: 100%;
+    flex: 1;
+}

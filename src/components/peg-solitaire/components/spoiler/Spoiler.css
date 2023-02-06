@@ -1,0 +1,16 @@
+.spoiler-container {
+    background-color: gray;
+    color: white;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+details {
+    place-self: start;
+    width: 100%;
+    margin-top: 5px;
+}
+
+details summary {
+    cursor: pointer;
+}

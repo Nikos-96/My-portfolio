@@ -1,0 +1,93 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    width: 100%;
+}
+
+/* .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    width: 1000px;
+} */
+
+.menu button {
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    /* padding: 10px 20px; */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    /* margin-right: 2rem; */
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+@media (hover: hover) {
+    .menu button:hover {
+        background-color: #726767;
+    }
+}
+
+.menu button:active {
+    transform: translateY(0.3rem);
+}
+
+.menu .inputContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; */
+    width: 150px;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.menu .info {
+    flex: 1;
+}
+
+.menu .rangeContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .rangeContainer input {
+    width: 100%;
+}
+
+.menu .info svg {
+    display: none;
+    margin-right: 10px;
+}
+
+.menu .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 45px; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 1240px) {
+    .menu .info svg {
+        display: block;
+    }
+}
+
+/* .menu button {
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+} */

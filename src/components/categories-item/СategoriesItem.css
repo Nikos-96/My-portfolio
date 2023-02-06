@@ -1,0 +1,34 @@
+.category-btn {
+    max-width: 140px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    /* margin: 0 1rem; */
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    /* flex: 1 0 140px; */
+}
+
+.c-btn__active {
+    transition: 0.7s;
+    background-color: #be6a6a;
+}
+
+.category-btn:hover {
+    background-color: rgba(190, 106, 106, 0.4);
+}
+
+.c-btn__active:hover {
+    transition: 0.7s;
+    background-color: #be6a6a;
+}
+
+@media only screen and (max-width: 470px) {
+
+    .category-btn {
+        max-width: none;
+    }
+}

@@ -1,0 +1,30 @@
+.PostsApp .search-panel {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+}
+
+.PostsApp .form-control {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #495057;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: calc(1.5em + .75rem + 2px);
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+}
+
+.PostsApp .search-panel .search-input {
+    /* width: auto; */
+    /* flex-grow: 1; */
+    margin-right: 3px;
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+}
