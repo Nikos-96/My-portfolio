@@ -7,7 +7,8 @@
     height: 50px;
     width: 100%;
     border-bottom: 1px solid white;
-    background-color: #be6a6a;
+    /* background-color: #be6a6a; */
+    background-color: var(--mainColor);
     z-index: 99999999;
 }
 
@@ -34,7 +35,8 @@
 
 .header-links__item {
     display: inline-block;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: var(--hoverColor);
     border: 1px solid white;
     color: white;
     padding: 10px 20px;
@@ -52,7 +54,8 @@
 
 @media (hover: hover) {
     .header-links__item:hover {
-        background-color: #726767;
+        /* background-color: #726767; */
+        background-color: transparent;
     }
 }
 

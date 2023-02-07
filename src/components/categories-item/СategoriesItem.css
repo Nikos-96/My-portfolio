@@ -14,16 +14,19 @@
 
 .c-btn__active {
     transition: 0.7s;
-    background-color: #be6a6a;
+    /* background-color: #be6a6a; */
+    background-color: var(--mainColor);
 }
 
 .category-btn:hover {
-    background-color: rgba(190, 106, 106, 0.4);
+    /* background-color: rgba(190, 106, 106, 0.4); */
+    background-color: var(--hoverColor);
 }
 
 .c-btn__active:hover {
     transition: 0.7s;
-    background-color: #be6a6a;
+    /* background-color: #be6a6a; */
+    background-color: var(--mainColor);
 }
 
 @media only screen and (max-width: 470px) {

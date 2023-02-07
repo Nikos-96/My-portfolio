@@ -22,6 +22,7 @@
     font-size: 1.6rem;
     font-family: inherit;
     border-radius: 5px;
+    padding: 0.5rem;
 }
 
 .input-container .send-container {
