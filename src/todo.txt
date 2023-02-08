@@ -1,3 +1,5 @@
 rewrite findNextPosition, getCellsMove and getEmptyCellsCount functions in 2048 game
 add links to github
 design looks like shit
+
+do this https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
