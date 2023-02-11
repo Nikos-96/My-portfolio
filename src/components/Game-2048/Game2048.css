@@ -1,12 +1,14 @@
 .Game2048 {
-    /* position: relative; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2c2c2c;
     color: white;
     /* overscroll-behavior-x: none; */
-    min-height: calc(100vh - 150px);
+    /* min-height: calc(100vh - 150px); */
+    height: calc(100vh - 150px);
+    height: calc((var(--vh, 1vh) * 100) - 150px);
 }
 
 .Game2048 h3 {
@@ -14,7 +16,7 @@
 }
 
 .Game2048 .container {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -298,7 +300,7 @@
 
 .Game2048 .app-links {
     position: absolute;
-    bottom: -100px;
+    bottom: 1%;
     left: 0;
     /* max-width: 200px; */
     display: flex;
