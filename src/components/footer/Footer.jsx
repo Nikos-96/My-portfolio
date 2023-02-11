@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsTelegram } from 'react-icons/bs';
 
 const Footer = () => {
+
+    const [iconSize, setIconSize] = useState(50);
+
+    // useEffect(() => {
+
+    //     setIconSize(document.body.clientWidth <= 450 ? 40 : 50);
+    //     window.addEventListener()
+    // }, [])
+
     return (
         <div className='footer'>
             <a
@@ -12,7 +21,7 @@ const Footer = () => {
                 target='_blank'
                 rel='noreferrer'
             >
-                <AiFillGithub size={50} color='white' />
+                <AiFillGithub className='footer-icon' color='white' />
                 GitHub
             </a>
             <a
@@ -21,7 +30,7 @@ const Footer = () => {
                 target='_blank'
                 rel='noreferrer'
             >
-                <BsTelegram size={50} color='white' />
+                <BsTelegram className='footer-icon' color='white' />
                 Telegram
             </a>
         </div>

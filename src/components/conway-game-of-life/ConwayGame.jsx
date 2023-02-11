@@ -66,6 +66,16 @@ const ConwayGame = () => {
         )
     }, [])
 
+    // useEffect(() => {
+    //     const updateHight = () => {
+    //         let vh = window.innerHeight * 0.01;
+    //         document.documentElement.style.setProperty('--vh', `${vh}px`);
+    //     }
+    //     updateHight();
+    //     window.addEventListener('resize', updateHight);
+    //     return () => window.removeEventListener('resize', updateHight);
+    // }, [])
+
     return (
         <div className='conway-game' ref={ref}>
             {showDescModal &&

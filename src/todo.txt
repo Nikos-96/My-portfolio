@@ -3,3 +3,6 @@ add links to github
 design looks like shit
 
 do this https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+
+fix linter errors
+change buttons in games

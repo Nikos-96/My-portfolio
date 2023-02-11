@@ -14,8 +14,20 @@ import Landing1Page from './components/pages/sites/Landing1Page';
 import CalculatorPage from './components/pages/sites/CalculatorPage';
 import Contact from './components/pages/Contact/Contact';
 import Comments from './components/comments/Comments';
+import { useEffect } from 'react';
 
 function App() {
+
+    useEffect(() => {
+        const updateHight = () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        updateHight();
+        window.addEventListener('resize', updateHight);
+        // return () => window.removeEventListener('resize', updateHight);
+    }, [])
+
     return (
         <BrowserRouter>
             <div className="App">

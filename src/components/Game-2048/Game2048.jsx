@@ -208,15 +208,15 @@ const Game2048 = () => {
         return () => document.body.removeAttribute('style');
     }, [])
 
-    useEffect(() => {
-        const updateHight = () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-            console.log('update hight')
-        }
-        window.addEventListener('resize', updateHight);
-        return () => window.removeEventListener('resize', updateHight);
-    }, [])
+    // useEffect(() => {
+    //     const updateHight = () => {
+    //         let vh = window.innerHeight * 0.01;
+    //         document.documentElement.style.setProperty('--vh', `${vh}px`);
+    //     }
+    //     updateHight();
+    //     window.addEventListener('resize', updateHight);
+    //     return () => window.removeEventListener('resize', updateHight);
+    // }, [])
 
     const createAnimationStyle = useCallback((r, c, isNew) => {
         if (cellsOffset) {

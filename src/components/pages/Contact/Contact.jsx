@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css'
 
 const Contact = () => {
+
+    // useEffect(() => {
+    //     const updateHight = () => {
+    //         let vh = window.innerHeight * 0.01;
+    //         document.documentElement.style.setProperty('--vh', `${vh}px`);
+    //     }
+    //     updateHight();
+    //     window.addEventListener('resize', updateHight);
+    //     return () => window.removeEventListener('resize', updateHight);
+    // }, [])
+
     return (
         <div className='contact-page'>
             <div className='container'>
