@@ -43,7 +43,7 @@ const ProjectList = ({ activeCategory }) => {
             {
                 title: 'VPN',
                 img: './img/vpn-landing.png',
-                path: '/landing1'
+                path: '/vpn'
             },
         ],
         [

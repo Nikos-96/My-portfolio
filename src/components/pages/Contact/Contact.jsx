@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Contact.css'
+import { useGoogleAnalytics } from 'react-ga4-gtag';
 
 const Contact = () => {
 
@@ -12,6 +13,17 @@ const Contact = () => {
     //     window.addEventListener('resize', updateHight);
     //     return () => window.removeEventListener('resize', updateHight);
     // }, [])
+
+    const gtag = useGoogleAnalytics();
+
+    useEffect(() => {
+        if (gtag !== null) {
+            gtag('event', 'screen_view', {
+                'app_name': 'My Portfolio',
+                'screen_name': 'contact'
+            });
+        }
+    }, [gtag]);
 
     return (
         <div className='contact-page'>

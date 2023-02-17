@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useGoogleAnalytics } from 'react-ga4-gtag';
 import Categories from '../categories/Сategories';
 import Comments from '../comments/Comments';
 import ProjectList from '../project-list/ProjectList';
 
 const Projects = () => {
+
+    const gtag = useGoogleAnalytics();
+
+    useEffect(() => {
+        if (gtag !== null) {
+            gtag('event', 'screen_view', {
+                'app_name': 'My Portfolio',
+                'screen_name': 'Home'
+            });
+        }
+    }, [gtag]);
 
     const [activeCategory, setActiveCategory] = useState(+sessionStorage.getItem('activeCategory') || 0);
 

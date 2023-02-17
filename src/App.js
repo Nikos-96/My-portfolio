@@ -41,7 +41,7 @@ function App() {
                         <Route path='/game2048' element={<Game2048Page />} />
                         <Route path='/got-app/*' element={<GotAppPage />} />
                         <Route path='/food' element={<FoodPage />} />
-                        <Route path='/landing1' element={<Landing1Page />} />
+                        <Route path='/vpn' element={<Landing1Page />} />
                         <Route path='/posts-app' element={<PostsAppPage />} />
                         <Route path='/calculator' element={<CalculatorPage />} />
                         <Route path='/contact' element={<Contact />} />
