@@ -41,7 +41,7 @@ const Contact = () => {
                     If you have any questions or want to contact me, you can do it in telegram.
                 </p>
                 <br />
-                Telegram: <a href="https://telegram.me/Nikos_96" target='_blank' rel='noreferrer'>@Nikos_96</a>
+                Telegram: <a href="https://telegram.me/Nikos_96" target='_blank' rel='noopener noreferrer'>@Nikos_96</a>
             </div>
         </div >
     );

@@ -325,7 +325,7 @@ const Game2048 = () => {
                     </div>
                     <div className='desc'>
                         Use WASD, arrow keys or swipes to move cells. Read more about this game
-                        here: {<a href='https://en.wikipedia.org/wiki/2048_(video_game)' target='_blank' rel='noreferrer'>2048</a>}
+                        here: {<a href='https://en.wikipedia.org/wiki/2048_(video_game)' target='_blank' rel='noopener noreferrer'>2048</a>}
                     </div>
                     <div className='info'>
                         <div onClick={() => toggleInfoModal('leaderboard')}>
@@ -346,7 +346,7 @@ const Game2048 = () => {
                                         <h3>Info:</h3>
                                     </div>
                                     Use WASD, arrow keys or swipes to move cells. Read more about this game
-                                    here: {<a href='https://en.wikipedia.org/wiki/2048_(video_game)' target='_blank' rel='noreferrer'>2048</a>}
+                                    here: {<a href='https://en.wikipedia.org/wiki/2048_(video_game)' target='_blank' rel='noopener noreferrer'>2048</a>}
                                 </>
                             }
                         </div>
@@ -371,7 +371,7 @@ const Game2048 = () => {
                 <div className='app-links'>
                     <a href='https://play.google.com/store/apps/details?id=com.mYgame2048.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
                         target='_blank'
-                        rel='noreferrer'
+                        rel='noopener noreferrer'
                     >
                         <img
                             alt='Get it on Google Play'

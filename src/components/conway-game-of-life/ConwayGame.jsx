@@ -61,7 +61,7 @@ const ConwayGame = () => {
                 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.<br />
                 <br />
                 Click on cell to make it live/dead.
-                Read more here: {<a href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' target='_blank' rel='noreferrer'>Link</a>}
+                Read more here: {<a href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' target='_blank' rel='noopener noreferrer'>Link</a>}
             </>
         )
     }, [])

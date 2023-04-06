@@ -51,6 +51,11 @@ const ProjectList = ({ activeCategory }) => {
                 title: 'Beautiful calculator',
                 img: './img/calculator.png',
                 path: '/calculator'
+            },
+            {
+                title: 'Chrome extension',
+                img: './img/7dtd.png',
+                path: 'https://chrome.google.com/webstore/detail/7-days-to-die-a20-twitch/jgmddemihbgmkfbghhjkcnfhndoplkon?hl=ru'
             }
         ],
     ]

@@ -101,7 +101,7 @@ const Game = () => {
                 <h2>Peg solitaire</h2>
                 <br />
                 Click on peg (orange square) to choose it. Then click on an empty cell jumping over another peg. The peg that has been jumped over will be removed. The goal is to remove all pegs except one in the middle.
-                Read more here: <a href='https://en.wikipedia.org/wiki/Peg_solitaire' target='_blank' rel='noreferrer'>Link</a>
+                Read more here: <a href='https://en.wikipedia.org/wiki/Peg_solitaire' target='_blank' rel='noopener noreferrer'>Link</a>
             </>
         )
     }, [])

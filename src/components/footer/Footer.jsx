@@ -19,7 +19,7 @@ const Footer = () => {
                 className='footer-link'
                 href='https://github.com/Nikos-96/My-portfolio'
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
             >
                 <AiFillGithub className='footer-icon' color='white' />
                 GitHub
@@ -28,7 +28,7 @@ const Footer = () => {
                 className='footer-link'
                 href='https://telegram.me/Nikos_96'
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
             >
                 <BsTelegram className='footer-icon' color='white' />
                 Telegram
