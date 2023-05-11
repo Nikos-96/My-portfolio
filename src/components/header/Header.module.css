@@ -10,6 +10,7 @@
     /* background-color: #be6a6a; */
     background-color: var(--mainColor);
     z-index: 99999999;
+    padding-left: calc(100vw - 100%);
 }
 
 .header-inner {
@@ -23,6 +24,7 @@
 
 .title {
     margin-left: 1.5rem;
+    cursor: pointer;
 }
 
 .header-links {

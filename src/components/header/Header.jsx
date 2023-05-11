@@ -1,12 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
+
+    const nav = useNavigate();
+
     return (
         <div className={styles.header}>
             <div className={styles['header-inner']}>
-                <div className={styles.title}><h1>My Projects</h1></div>
+                <div
+                    className={styles.title}
+                    onClick={() => nav('/')}
+                >
+                    <h1>My Projects</h1>
+                </div>
                 <div className={styles['header-links']}>
                     <Link to='/' className={styles['header-links__item']}>
                         {/* <button>Home</button> */}
