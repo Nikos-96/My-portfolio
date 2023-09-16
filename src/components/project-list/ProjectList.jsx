@@ -21,6 +21,11 @@ const ProjectList = ({ activeCategory }) => {
                 img: './img/conway-game-of-life.png',
                 path: '/conway-game-of-life'
             },
+            {
+                title: 'Rock, Paper, Scissors Online (link)',
+                img: './img/rps.png',
+                path: 'https://rock-paper-scissors.kesug.com/'
+            },
         ],
         [
             {
