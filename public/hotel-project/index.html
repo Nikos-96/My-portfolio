@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar__menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="25"
+                        width="23"
+                        viewBox="0 0 448 512"
+                    >
+                        <path
+                            opacity="1"
+                            fill="#1E3050"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                    </svg>
+                </div>
+                <ul class="navbar__links-first">
+                    <li>
+                        <a style="color: #65aef2" href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+                <a href="index.html">
+                    <div class="logo">
+                        Hotel Logo
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="52"
+                            height="30"
+                            viewBox="0 0 52 30"
+                            fill="none"
+                        >
+                            <path
+                                d="M28.4749 1.52513C27.108 0.158291 24.892 0.158291 23.5251 1.52513L1.25126 23.799C-0.115571 25.1658 -0.115571 27.3819 1.25126 28.7487C2.6181 30.1156 4.83418 30.1156 6.20101 28.7487L26 8.94975L45.799 28.7487C47.1658 30.1156 49.3819 30.1156 50.7487 28.7487C52.1156 27.3819 52.1156 25.1658 50.7487 23.799L28.4749 1.52513ZM29.5 14L29.5 4L22.5 4L22.5 14L29.5 14Z"
+                                fill="#65AEF2"
+                            />
+                        </svg>
+                    </div>
+                </a>
+                <ul class="navbar__links-second">
+                    <li><a href="index.html#booking">Rooms</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+            <h1>
+                Discover Extraordinary
+                <br />
+                Comfort in Hotels
+            </h1>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="8"
+                viewBox="0 0 48 8"
+                fill="none"
+                class="dots"
+            >
+                <circle cx="24" cy="4" r="4" fill="#65AEF2" />
+                <circle cx="4" cy="4" r="4" fill="white" />
+                <circle cx="44" cy="4" r="4" fill="white" />
+            </svg>
+        </header>
+
+        <main>
+            <section id="booking">
+                <dialog class="booking__modal">
+                    <!-- <div class="booking__modal-container">
+
+                    </div> -->
+                    <form class="personal-form">
+                        <label for="name">First name:</label>
+                        <input type="text" name="name" id="name" required />
+
+                        <label for="surname">Last name:</label>
+                        <input
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            required
+                        />
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required />
+
+                        <label for="number">Number:</label>
+                        <input
+                            type="number"
+                            name="number"
+                            id="number"
+                            required
+                        />
+                        <div class="btn-container">
+                            <button type="submit">Confirm</button>
+                            <button class="booking__close-btn" type="button">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="booking-confirm">
+                        <h2>Thank you!</h2>
+                        <p>
+                            Shortly, you will receive an email with instructions
+                            for payment and confirmation.
+                        </p>
+                        <button class="booking__btn booking__close-btn">
+                            Ok!
+                        </button>
+                    </div>
+                </dialog>
+                <div style="margin-bottom: 70px">
+                    <h2 class="booking-heading">Book a Room</h2>
+                    <span class="booking-text">
+                        Discover the perfect space for you!
+                    </span>
+                </div>
+                <form class="booking-form">
+                    <div class="booking__inner">
+                        <div class="booking__inner-text">Date</div>
+
+                        <label class="date-label" for="date-from">
+                            <span>Arrival:</span>
+                            <!-- <img src="./img/calendar.svg" alt="calendar icon" /> -->
+                            <input
+                                type="date"
+                                name="dateFrom"
+                                id="date-from"
+                                class="date-input"
+                                required
+                            />
+                        </label>
+                        <label class="date-label" for="date-to">
+                            <span>Departure:</span>
+                            <!-- <img src="./img/calendar.svg" alt="calendar icon" /> -->
+                            <input
+                                type="date"
+                                name="dateTo"
+                                id="date-to"
+                                class="date-input"
+                                required
+                            />
+                        </label>
+
+                        <!-- Check Available -->
+                    </div>
+
+                    <div class="booking__inner">
+                        <div class="booking__inner-text">Person</div>
+                        <div style="display: flex">
+                            <img src="./img/person.svg" alt="person icon" />
+                            <label for="adults"><span>Adults</span> </label>
+                            <!-- 2 -->
+                            <select
+                                name="adults"
+                                id="adults"
+                                class="booking__select"
+                            >
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <!-- <img src="./img/arrow.svg" alt="arrow icon" /> -->
+                        </div>
+
+                        <!-- <span>Children</span> -->
+                        <!-- 0 -->
+                        <div style="display: flex">
+                            <img src="./img/smile.svg" alt="smile icon" />
+
+                            <label for="children"><span>Children</span></label>
+                            <!-- 2 -->
+                            <select
+                                name="children"
+                                id="children"
+                                class="booking__select"
+                            >
+                                <option selected value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <!-- <img src="./img/arrow.svg" alt="arrow icon" /> -->
+                    </div>
+                    <button class="booking__btn">BOOK NOW</button>
+                </form>
+            </section>
+
+            <section id="services">
+                <div class="lightbox-container">
+                    <div class="background-modal"></div>
+                    <div class="lightbox-img-container"></div>
+                    <div class="nav-panel">
+                        <button class="btn">
+                            <svg
+                                class="nav-btn lightbox-next"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                height="16"
+                                width="14"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    opacity="1"
+                                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                                />
+                            </svg>
+                        </button>
+
+                        <button class="btn">
+                            <svg
+                                class="nav-btn lightbox-prev"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                height="16"
+                                width="14"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    opacity="1"
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                />
+                            </svg>
+                        </button>
+
+                        <button class="btn">
+                            <svg
+                                class="nav-btn close-btn"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                height="16"
+                                width="12"
+                                viewBox="0 0 384 512"
+                            >
+                                <path
+                                    opacity="1"
+                                    d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-preview"></div>
+                <div class="images-row">
+                    <button class="btn images-row__arrow-left">
+                        <svg
+                            class="nav-btn prev-btn"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            height="16"
+                            width="14"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                opacity="1"
+                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                            />
+                        </svg>
+                    </button>
+                    <div class="btn images-row__container">
+                        <div class="images-row__inner"></div>
+                    </div>
+                    <button class="btn images-row__arrow-right">
+                        <svg
+                            class="nav-btn next-btn"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            height="16"
+                            width="14"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                opacity="1"
+                                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section id="pricing" class="specials">
+                <div class="specials-desc">
+                    <div class="specials-container">
+                        <span>Special Offers</span>
+                        <h2>Best offer of the month</h2>
+                        <p>
+                            Experience Fantastic Benefits and Obtain Better
+                            Rates When You Make a Direct Booking on Our Official
+                            Website
+                        </p>
+                    </div>
+                    <div class="specials-more">
+                        <a href="offers.html">View all</a>
+                    </div>
+                </div>
+                <div class="specials-cards">
+                    <div class="specials-cards__card">
+                        <img src="./img/honeymoon_card.png" alt="honeymoon" />
+                        <span class="card-description" style="font-weight: 700"
+                            >Room</span
+                        >
+                        <div class="specials-flex__row">
+                            <b>Honeymoon</b>
+                            <div>
+                                <img
+                                    src="./img/person_card.svg"
+                                    alt="person icon"
+                                />
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <span class="card-description">
+                            Indulge in a Memorable One-Time Romantic Dinner for
+                            Two
+                        </span>
+                        <div class="card-price">
+                            <b style="font-size: 36px">$699</b>
+                            <span>/night</span>
+                        </div>
+                    </div>
+                    <div class="specials-cards__card">
+                        <img src="./img/meetings_card.png" alt="honeymoon" />
+                        <span class="card-description" style="font-weight: 700"
+                            >Room</span
+                        >
+                        <div class="specials-flex__row">
+                            <b>Meetings</b>
+                            <div>
+                                <img
+                                    src="./img/person_card.svg"
+                                    alt="person icon"
+                                />
+                                <span>30</span>
+                            </div>
+                        </div>
+                        <span class="card-description">
+                            Experience an Exclusively Private Environment to
+                            Boost Your Productivity
+                        </span>
+                        <div class="card-price">
+                            <b style="font-size: 36px">$999</b>
+                            <span>/night</span>
+                        </div>
+                    </div>
+                    <div class="specials-cards__card">
+                        <img src="./img/dining_card.png" alt="honeymoon" />
+                        <span class="card-description" style="font-weight: 700">
+                            Dining
+                        </span>
+                        <div class="specials-flex__row">
+                            <b>Romantic Dining</b>
+                            <div>
+                                <img
+                                    src="./img/person_card.svg"
+                                    alt="person icon"
+                                />
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <span class="card-description">
+                            Indulge in a Memorable One-Time Romantic Dinner for
+                            Two
+                        </span>
+                        <div class="card-price">
+                            <b style="font-size: 36px">$499</b>
+                            <span>/night</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div id="newsletter" class="footer-promo">
+                <h2>Newsletter & Special Promo</h2>
+                <div class="subscribe-mesage"></div>
+                <form class="subscribe-form">
+                    <input
+                        type="text"
+                        placeholder="Enter your email here"
+                        name="email"
+                        required
+                    />
+                    <button class="subscribe-btn" href="#">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="footer-logo">
+                    <a href="index.html"
+                        ><img src="./img/footer-logo.svg" alt="logo"
+                    /></a>
+                </div>
+                <div class="links">
+                    <ul class="footer-links__list">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                    <ul class="footer-links__list">
+                        <!-- <li><a href="#">FAQ</a></li> -->
+                        <li><a href="term-of-use.html">Term of Use</a></li>
+                        <li>
+                            <a href="privacy-police.html">Privacy Police</a>
+                        </li>
+                        <li>
+                            <a href="imprint.html">Imprint</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © Copyright Booking Hotels. All right reserved.
+            </div>
+        </footer>
+    </body>
+</html>

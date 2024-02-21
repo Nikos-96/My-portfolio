@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './СategoriesItem.css';
 
-const СategoriesItem = ({ title, id, updateCategory, activeCategory }) => {
+const СategoriesItem = ({ title, id, commentsId, updateCategory, activeCategory }) => {
+
     return (
-        id !== 4
+        id !== commentsId
             ?
             <button
                 className={activeCategory === id ? 'category-btn c-btn__active' : 'category-btn'}

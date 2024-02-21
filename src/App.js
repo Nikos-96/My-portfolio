@@ -15,6 +15,8 @@ import CalculatorPage from './components/pages/sites/CalculatorPage';
 import Contact from './components/pages/Contact/Contact';
 import Comments from './components/comments/Comments';
 import { useEffect } from 'react';
+import HotelEmbed from './components/hotel-embed/HotelEmbed';
+import HotelApp from './components/hotel-app-page/HotelApp';
 
 function App() {
 
@@ -45,6 +47,9 @@ function App() {
                         <Route path='/posts-app' element={<PostsAppPage />} />
                         <Route path='/calculator' element={<CalculatorPage />} />
                         <Route path='/contact' element={<Contact />} />
+                        <Route path='/hotel' element={<HotelEmbed />} />
+                        <Route path='/hotel-app' element={<HotelApp />} />
+                        <Route path='/download.php/*' />
                         <Route path='/comments' element={<Comments />} />
                     </Routes>
                 </div>

@@ -29,6 +29,18 @@ const ProjectList = ({ activeCategory }) => {
         ],
         [
             {
+                title: 'Hotel Website',
+                img: './img/hotel.png',
+                path: '/hotel'
+            },
+            {
+                title: 'Hotel App (Java)',
+                img: './img/hotel-app.png',
+                path: '/hotel-app'
+            }
+        ],
+        [
+            {
                 title: 'GoT',
                 img: './img/got-app.png',
                 path: '/got-app'
@@ -63,6 +75,7 @@ const ProjectList = ({ activeCategory }) => {
                 path: 'https://chrome.google.com/webstore/detail/7-days-to-die-a20-twitch/jgmddemihbgmkfbghhjkcnfhndoplkon?hl=ru'
             }
         ],
+        [],
     ]
 
     return (

@@ -4,7 +4,7 @@ import './Сategories.css';
 
 const Сategories = ({ updateCategory, activeCategory }) => {
 
-    const data = ['Games', 'Fake DB pages', 'Landings', 'Other features', 'Comments'];
+    const data = ['Games', 'Hotel Project (New)', 'Test API Pages', 'Landings', 'Other features', 'Comments'];
 
     return (
         <ul className='categories'>
@@ -15,6 +15,7 @@ const Сategories = ({ updateCategory, activeCategory }) => {
                             <CategoriesItem
                                 title={el}
                                 id={id}
+                                commentsId={data.length - 1}
                                 updateCategory={updateCategory}
                                 activeCategory={activeCategory}
                             />

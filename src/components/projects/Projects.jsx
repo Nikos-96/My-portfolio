@@ -20,10 +20,8 @@ const Projects = () => {
     const [activeCategory, setActiveCategory] = useState(+sessionStorage.getItem('activeCategory') || 0);
 
     const updateCategory = (id) => {
-        if (id !== 4) {
-            sessionStorage.setItem('activeCategory', id);
-            setActiveCategory(id);
-        }
+        sessionStorage.setItem('activeCategory', id);
+        setActiveCategory(id);
     }
 
     return (

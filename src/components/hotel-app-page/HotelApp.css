@@ -1,0 +1,51 @@
+.hotel-app__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    flex: 1;
+    margin: 0 1.5rem;
+}
+
+.hotel-app__desc {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 3rem;
+}
+
+.hotel-app__desc p {
+    margin: 1rem 0;
+}
+
+.hotel-app__desc a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.hotel-app__desc h2 {
+    margin-bottom: 1rem;
+}
+
+.hotel-app__image {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid white;
+}
+
+.hotel-app__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .hotel-app__wrapper {
+        flex-direction: column;
+    }
+
+    .hotel-app__desc {
+        margin-right: 0;
+    }
+}

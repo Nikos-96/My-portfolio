@@ -38,8 +38,8 @@
 .header-links__item {
     display: inline-block;
     /* background-color: transparent; */
-    background-color: var(--hoverColor);
-    border: 1px solid white;
+    /* background-color: var(--hoverColor); */
+    /* border: 1px solid white; */
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -48,6 +48,7 @@
     margin-right: 2rem;
     transition: 0.2s;
     border-radius: 5px;
+    font-weight: 700;
 }
 
 /* .header-links__item:hover {
