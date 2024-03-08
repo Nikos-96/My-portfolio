@@ -4,16 +4,16 @@ import { useGoogleAnalytics } from 'react-ga4-gtag';
 
 const ConwayGamePage = () => {
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
 
-    useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'conway-game-of-life'
-            });
-        }
-    }, [gtag]);
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'conway-game-of-life'
+    //         });
+    //     }
+    // }, [gtag]);
 
     return (
         <ConwayGame />

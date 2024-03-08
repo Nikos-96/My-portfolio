@@ -3,19 +3,24 @@ import { useGoogleAnalytics } from 'react-ga4-gtag';
 import Categories from '../categories/Сategories';
 import Comments from '../comments/Comments';
 import ProjectList from '../project-list/ProjectList';
+import ReactGA from "react-ga4";
 
 const Projects = () => {
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
+
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'Home'
+    //         });
+    //     }
+    // }, [gtag]);
 
     useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'Home'
-            });
-        }
-    }, [gtag]);
+        ReactGA.send({ hitType: "pageview", page: "/", title: "projects" });
+    }, [])
 
     const [activeCategory, setActiveCategory] = useState(+sessionStorage.getItem('activeCategory') || 0);
 

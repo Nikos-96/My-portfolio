@@ -14,16 +14,16 @@ const Contact = () => {
     //     return () => window.removeEventListener('resize', updateHight);
     // }, [])
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
 
-    useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'contact'
-            });
-        }
-    }, [gtag]);
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'contact'
+    //         });
+    //     }
+    // }, [gtag]);
 
     return (
         <div className='contact-page'>

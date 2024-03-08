@@ -4,16 +4,16 @@ import { useGoogleAnalytics } from 'react-ga4-gtag';
 
 const CalculatorPage = () => {
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
 
-    useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'calculator'
-            });
-        }
-    }, [gtag]);
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'calculator'
+    //         });
+    //     }
+    // }, [gtag]);
 
     return (
         <Calculator />

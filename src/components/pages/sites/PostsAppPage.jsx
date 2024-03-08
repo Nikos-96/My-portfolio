@@ -4,16 +4,16 @@ import { useGoogleAnalytics } from 'react-ga4-gtag';
 
 const PostsAppPage = () => {
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
 
-    useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'posts-app'
-            });
-        }
-    }, [gtag]);
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'posts-app'
+    //         });
+    //     }
+    // }, [gtag]);
 
     return (
         <PostsApp />

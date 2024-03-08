@@ -4,16 +4,16 @@ import { useGoogleAnalytics } from 'react-ga4-gtag';
 
 const FoodPage = () => {
 
-    const gtag = useGoogleAnalytics();
+    // const gtag = useGoogleAnalytics();
 
-    useEffect(() => {
-        if (gtag !== null) {
-            gtag('event', 'screen_view', {
-                'app_name': 'My Portfolio',
-                'screen_name': 'food'
-            });
-        }
-    }, [gtag]);
+    // useEffect(() => {
+    //     if (gtag !== null) {
+    //         gtag('event', 'screen_view', {
+    //             'app_name': 'My Portfolio',
+    //             'screen_name': 'food'
+    //         });
+    //     }
+    // }, [gtag]);
 
     return (
         <Food />
