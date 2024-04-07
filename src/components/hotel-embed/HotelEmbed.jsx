@@ -1,4 +1,5 @@
 import './HotelEmbed.css';
+import React from 'react';
 
 const HotelEmbed = () => {
     return (
@@ -15,4 +16,4 @@ const HotelEmbed = () => {
     )
 }
 
-export default HotelEmbed;
+export default React.memo(HotelEmbed);
